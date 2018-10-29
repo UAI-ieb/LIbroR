@@ -1,6 +1,6 @@
 # Introducción {#intro}
 
-El paquete `bookdown` [@R-bookdown] de R [@R-base] permite escribir libros empleando 
+UAI añade esto El paquete `bookdown` [@R-bookdown] de R [@R-base] permite escribir libros empleando 
 [R Markdown](http://rmarkdown.rstudio.com) de forma fácil. 
 Sin preocuparse mucho por los detalles de composición 
 se pueden crear libros en distintos formatos (HTML / LaTeX / PDF / EPUB / ...). 
