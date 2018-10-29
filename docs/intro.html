@@ -5,11 +5,11 @@
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Escritura de libros con bookdown</title>
+  <title>Capítulo 1 Introducción | Escritura de libros con bookdown</title>
   <meta name="description" content="Este libro es una introducción al paquete bookdown para la escritura de libros (en castellano, galego, …).">
-  <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
+  <meta name="generator" content="bookdown  and GitBook 2.6.7">
 
-  <meta property="og:title" content="Escritura de libros con bookdown" />
+  <meta property="og:title" content="Capítulo 1 Introducción | Escritura de libros con bookdown" />
   <meta property="og:type" content="book" />
   
   
@@ -17,7 +17,7 @@
   <meta name="github-repo" content="rubenfcasal/bookdown_intro" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Escritura de libros con bookdown" />
+  <meta name="twitter:title" content="Capítulo 1 Introducción | Escritura de libros con bookdown" />
   
   <meta name="twitter:description" content="Este libro es una introducción al paquete bookdown para la escritura de libros (en castellano, galego, …)." />
   
@@ -25,7 +25,7 @@
 <meta name="author" content="Fernández-Casal, R. y Cotos-Yáñez, T.R.">
 
 
-<meta name="date" content="2018-10-25">
+<meta name="date" content="2019-01-02">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -36,6 +36,7 @@
 <link rel="next" href="archivos-de-configuracion.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
@@ -167,7 +168,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
             <section class="normal" id="section-">
 <div id="intro" class="section level1">
 <h1><span class="header-section-number">Capítulo 1</span> Introducción</h1>
-<p>El paquete <code>bookdown</code> <span class="citation">(Xie <a href="#ref-R-bookdown">2018</a><a href="#ref-R-bookdown">a</a>)</span> de R <span class="citation">(R Core Team <a href="#ref-R-base">2018</a>)</span> permite escribir libros empleando <a href="http://rmarkdown.rstudio.com">R Markdown</a> de forma fácil. Sin preocuparse mucho por los detalles de composición se pueden crear libros en distintos formatos (HTML / LaTeX / PDF / EPUB / …). Además de permitir emplear las extensiones Markdown de Pandoc (notas al pie de página, tablas, citas, ecuaciones LaTeX, …), se pueden emplear extensiones Markdown para libros (leyendas de figuras y tablas, numeración y referencias cruzadas de figuras / tablas / secciones / ecuaciones / teoremas / ejemplos / …, widgets HTML, …).</p>
+<p>UAIU 3 El paquete <code>bookdown</code> <span class="citation">(Xie <a href="#ref-R-bookdown">2018</a><a href="#ref-R-bookdown">a</a>)</span> de R <span class="citation">(R Core Team <a href="#ref-R-base">2018</a>)</span> permite escribir libros empleando <a href="http://rmarkdown.rstudio.com">R Markdown</a> de forma fácil. Sin preocuparse mucho por los detalles de composición se pueden crear libros en distintos formatos (HTML / LaTeX / PDF / EPUB / …). Además de permitir emplear las extensiones Markdown de Pandoc (notas al pie de página, tablas, citas, ecuaciones LaTeX, …), se pueden emplear extensiones Markdown para libros (leyendas de figuras y tablas, numeración y referencias cruzadas de figuras / tablas / secciones / ecuaciones / teoremas / ejemplos / …, widgets HTML, …).</p>
 <p>Este libro es una pequeña guía para la escritura de libros con este paquete (incluyendo algunos detalles para la escritura en otros idiomas distintos del inglés), pero se supone que el lector ya tiene conocimientos de RMarkdown. En el Apéndice <a href="rmarkdown.html#rmarkdown">A</a> se incluye algo de información sobre este lenguaje, pero la recomendación sería buscar fuentes adicionales de información si no se conoce, empezando por la web <a href="http://rmarkdown.rstudio.com/" class="uri">http://rmarkdown.rstudio.com/</a> y las fuentes descritas en dicho apéndice. También recomendamos consultar fuentes externas para obtener documentación detallada sobre los distintos temas, como por ejemplo los libros (disponibles de forma gratuita en línea):</p>
 <ul>
 <li><p><span class="citation">Xie (<a href="#ref-R-bookdown">2018</a><a href="#ref-R-bookdown">a</a>)</span> : Authoring Books and Technical Documents with R Markdown, <a href="https://bookdown.org/yihui/bookdown/" class="uri">https://bookdown.org/yihui/bookdown/</a>.</p></li>
@@ -193,7 +194,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 </div>
 <div id="primeros-pasos" class="section level2">
 <h2><span class="header-section-number">1.2</span> Primeros pasos</h2>
-<p>Si se emplea RStudio (recomendado), lo más cómodo sería crear un proyecto nuevo empleando el menú <em>File &gt; New Project &gt; New Directory &gt; Book project using bookdown</em>. Alternativamente se podría usar como plantilla algún libro publicado (este se puede descargar <a href="https://github.com/rubenfcasal/bookdown_intro/archive/master.zip">aquí</a>). Por ejemplo, el proyecto que crea por defecto RStudio está disponible en el repositorio de GitHub <a href="https://github.com/rstudio/bookdown-demo">rstudio/bookdown-demo</a> y se puede descargar como fichero <a href="https://github.com/rstudio/bookdown-demo/archive/master.zip">Zip</a>. Posteriormente se pueden ir modificando (añadiendo o eliminando) los ficheros <em>.Rmd</em> correspondientes a los distintos capítulos.</p>
+<p>Si se emplea RStudio (recomendado), lo más cómodo sería crear un proyecto nuevo mediante el menú <em>File &gt; New Project &gt; New Directory &gt; Book project using bookdown</em>. Alternativamente se podría usar como plantilla algún libro publicado (este se puede descargar <a href="https://github.com/rubenfcasal/bookdown_intro/archive/master.zip">aquí</a>). Por ejemplo, el proyecto que crea por defecto RStudio está disponible en el repositorio de GitHub <a href="https://github.com/rstudio/bookdown-demo">rstudio/bookdown-demo</a> y se puede descargar como fichero <a href="https://github.com/rstudio/bookdown-demo/archive/master.zip">Zip</a>. Posteriormente se pueden ir modificando (añadiendo o eliminando) los ficheros <em>.Rmd</em> correspondientes a los distintos capítulos.</p>
 <p>Si se abre el proyecto en RStudio, se puede compilar empleando el boton <em>Build Book</em><a href="#fn3" class="footnoteRef" id="fnref3"><sup>3</sup></a> en la pestaña <em>Build</em>. Por defecto se generará el libro (en los distintos formatos) en la carpeta <em>_book</em> y al terminar se abrirá automáticamente la versión HTML. El libro se generará (de forma simultánea en los formatos deseados) a partir de una serie de documentos R Markdown, cada uno correspondiente a un capítulo.</p>
 <p><strong>Nota</strong>: Si se produce un error, puede ser necesario<a href="#fn4" class="footnoteRef" id="fnref4"><sup>4</sup></a> eliminar manualmente los ficheros de salida (e.g.<br />
 <em>book_filename.Rmd</em> o <em>book_filename.md</em>) para poder volver a compilar.</p>
@@ -239,7 +240,7 @@ Cuando se ejecuta la compilación, por defecto se combinan todos los archivos en
 <ol start="1">
 <li id="fn1"><p>Los libros de Hadley <a href="http://adv-r.had.co.nz">Advanced R</a> y <a href="http://r-pkgs.had.co.nz">R packages</a> serían ejemplos con una versión “preliminar” de este paquete.<a href="intro.html#fnref1">↩</a></p></li>
 <li id="fn2"><p>Aunque el autor del paquete <code>bookdown</code> recomienda instalar <a href="https://yihui.name/tinytex">TinyTeX</a>.<a href="intro.html#fnref2">↩</a></p></li>
-<li id="fn3"><p>Alternativamente se puede ejecutar la función <code>render_book()</code> en el directorio del proyecto<a href="intro.html#fnref3">↩</a></p></li>
+<li id="fn3"><p>Alternativamente se puede ejecutar la función <code>render_book()</code> en el directorio del proyecto.<a href="intro.html#fnref3">↩</a></p></li>
 <li id="fn4"><p>Esto debería hacerse automáticamente si se incluye la opción <code>delete_merged_file: true</code> en el fichero de configuración <em>_bookdown.yml</em>.<a href="intro.html#fnref4">↩</a></p></li>
 <li id="fn5"><p>Evitar espacios (y acentos) en los nombres de los ficheros de los capítulos.<a href="intro.html#fnref5">↩</a></p></li>
 </ol>
@@ -270,7 +271,7 @@ gitbook.start({
 "google": false,
 "linkedin": false,
 "weibo": false,
-"instapper": false,
+"instapaper": false,
 "vk": false,
 "all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
 },
@@ -280,8 +281,12 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/rubenfcasal/bookdown_intro/edit/master/01-intro.Rmd",
+"link": "https://github.com/UAI-ieb/LibroR/edit/master/01-intro.Rmd",
 "text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
 },
 "download": ["bookdown_intro.pdf"],
 "toc": {
@@ -297,7 +302,7 @@ gitbook.start({
     var script = document.createElement("script");
     script.type = "text/javascript";
     var src = "";
-    if (src === "" || src === "true") src = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
     if (location.protocol !== "file:" && /^https?:/.test(src))
       src = src.replace(/^https?:/, '');
     script.src = src;
