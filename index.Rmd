@@ -1,6 +1,6 @@
 --- 
-title: "Escritura de libros con bookdown"
-author: "Fernández-Casal, R. y Cotos-Yáñez, T.R."
+title: "Modelo de libro Web UAI-IGS"
+author: "Hernán Madrid O y José Hoyos P"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
@@ -8,7 +8,7 @@ documentclass: book
 bibliography: [book.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
-github-repo: rubenfcasal/bookdown_intro
+github-repo: https://github.com/UAI-ieb/LibroR
 description: "Este libro es una introducción al paquete bookdown para la escritura de libros (en castellano, galego, ...)."
 ---
 
