@@ -1,5 +1,5 @@
 # Escritura de libros con bookdown
-## Fernández-Casal, R. y Cotos-Yáñez, T.R.
+
 
 Este libro es una pequeña guía sobre como emplear el paquete `bookdown` de R para la escritura de libros, incluyendo algunos detalles de configuración para la escritura en otros idiomas distintos del inglés (castellano, galego,...). 
 
