@@ -1,6 +1,6 @@
 --- 
-title: "Escritura de libros con bookdown"
-author: "Fernández-Casal, R. y Cotos-Yáñez, T.R."
+title: "Encuesta Servicio IGS"
+author: "Hernán Madrid"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
@@ -9,7 +9,7 @@ bibliography: [book.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
 github-repo: rubenfcasal/bookdown_intro
-description: "Este libro es una introducción al paquete bookdown para la escritura de libros (en castellano, galego, ...)."
+description: "Este libro es una introducción a la automatización de informes del área de Análisis Institucional del IGS."
 ---
 
 
